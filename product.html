@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Bella Olonje</title>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+		<link href="./css/reset.css" rel="stylesheet">
+		<link href="./css/main.css" rel="stylesheet">
+		<link href="./css/product.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Adds skiplink nav for products section with images -->
+		<ul class="skip-nav-links">
+			<li><a href="#skip-product" aria-label="skiplink to product section">Skip to "Products"</a></li>
+			</ul>
+		<!-- The main container-->
+		<div>
+			<div class="container">
+				<!--Container of the navbar for adding sutiabtle color background-->
+				<div class="">
+					<!--nav bar -->
+					<div class="navbar">
+						<div class="navbar-links">
+							<div class="navbar-links_logo">
+								<img src="./images/logo.png"  alt="Olonje logo">
+							</div>
+							<!-- links for navbar and change styling base on the max-width of screens -->
+							<ul class="navbar-links_container">
+								<li><a href="./index.html" aria-label="link to homepage">Home</a></li>
+								<li><a href="./product.html" aria-label="link to products page">Product</a></li>
+								<li><a href="#" aria-label="link to faq page">FAQ</a></li>
+								<li><a href="./contact.html" aria-label="link to contact page">Contact</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="product" id="product">
+						<div class="product-content">
+							<div class="product-content-text">
+								<h2 class="product-content_subtitle">Explore varieties</h2>
+								<h3 class="product-content_subtitle_summary">Shop for your favorites meal as e dey hot.</h3>
+								<h4 class="product-content_subtitle_detail">Make sure to watch below for the items list.</h4>
+							</div>
+							<div class="">
+								<picture>
+								  <!-- load the smaller images when width is smaller than 768px-->
+								  <source media="(min-width: 768px)" srcset="./images/p-4-960.png, ./images/p-4-1440.png 2x" />
+								  <source media="(max-width: 768px)" srcset="./images/p-4-480.png, ./images/p-4-960.png 2x" />
+								  <!-- Fallback images -->
+								  <img class="how-content_phoneimg" id="phoneimg_p4" src="./images/p-4.png" alt="" />
+								</picture>
+							</div>
+						</div>
+					</div>
+					<div class="pay-swipe" id="skip-product">
+						<h3>Checkout our Items</h3>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture>
+									  <!-- image source: https://unsplash.com/photos/cooked-dish-on-gray-bowl--YHSwy6uqvk -->
+									  <!-- load the smaller images when width is smaller than 720px-->
+									  <source media="(min-width: 720px)" srcset="./images/1,2358e5c5af8da5ce0847-960.jpg, ./images/1,2358e5c5af8da5ce0847-1440.jpg 2x" />
+									  <source media="(max-width: 720px)" srcset="./images/1,2358e5c5af8da5ce0847-480.jpg, ./images/1,2358e5c5af8da5ce0847-960.jpg 2x" />
+									  <!-- Fallback images -->
+									  <img src="./images/1.2358e5c5af8da5ce0847.jpg" alt="Singapore-style beef - CAD 2.20" />
+									</picture>
+									<div class="price-tag">Singapore-style beef - CAD 9.20</div>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<!-- image source: https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0 -->
+									  <!-- load the smaller images when width is smaller than 720px-->
+									  <source media="(min-width: 720px)" srcset="./images/2,99b2800bf71faebae047-960.jpg, ./images/2,99b2800bf71faebae047-1440.jpg 2x" />
+									  <source media="(max-width: 720px)" srcset="./images/2,99b2800bf71faebae047-480.jpg, ./images/2,99b2800bf71faebae047-960.jpg 2x" />
+									  <!-- Fallback images -->
+									  <img src="./images/2.99b2800bf71faebae047.jpg" alt="vegetable salads - CAD 3.40" />
+									</picture>
+									<div class="price-tag">Summer Salad - CAD 7.40</div>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+									<!-- image source: https://unsplash.com/photos/burger-skewered-with-knife-near-black-textile-1Shk_PkNkNw -->
+									  <!-- load the smaller images when width is smaller than 720px-->
+									  <source media="(min-width: 720px)" srcset="./images/3,21d06e69d44600cf2fbc-960.jpg, ./images/3,21d06e69d44600cf2fbc-1440.jpg 2x" />
+									  <source media="(max-width: 720px)" srcset="./images/3,21d06e69d44600cf2fbc-480.jpg, ./images/3,21d06e69d44600cf2fbc-960.jpg 2x" />
+									  <!-- Fallback images -->
+									  <img src="./images/3.21d06e69d44600cf2fbc.jpg" alt="skewered burger - CAD 2.00" />
+									</picture>
+									<div class="price-tag">Moose Burger - CAD 8.00</div>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+									<!-- image source: https://unsplash.com/photos/three-white-dimsum-on-brown-bowl-D-vDQMTfAAU -->
+									  <!-- load the smaller images when width is smaller than 720px-->
+									  <source media="(min-width: 720px)" srcset="./images/4,f88cacd87e3008e8380a-960.jpg, ./images/4,f88cacd87e3008e8380a-1440.jpg 2x" />
+									  <source media="(max-width: 720px)" srcset="./images/4,f88cacd87e3008e8380a-480.jpg, ./images/4,f88cacd87e3008e8380a-960.jpg 2x" />
+									  <!-- Fallback images -->
+									  <img src="./images/4.f88cacd87e3008e8380a.jpg" alt="dimsum - CAD 1.20" />
+									</picture>
+									
+									<div class="price-tag">Dimsum - CAD 4.20</div>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+									<!-- image source: https://unsplash.com/photos/two-slices-of-sandwich-on-brown-container-SqYmTDQYMjo -->
+									  <!-- load the smaller images when width is smaller than 720px-->
+									  <source media="(min-width: 720px)" srcset="./images/5,2f5a3d619010ce8b976e-960.jpg, ./images/5,2f5a3d619010ce8b976e-1440.jpg 2x" />
+									  <source media="(max-width: 720px)" srcset="./images/5,2f5a3d619010ce8b976e-480.jpg, ./images/5,2f5a3d619010ce8b976e-960.jpg 2x" />
+									  <!-- Fallback images -->
+									  <img src="./images/5.2f5a3d619010ce8b976e.jpg" alt="sandwich - CAD 3.90" />
+									</picture>
+									<div class="price-tag">Chickpea Smash Sandwich - CAD 6.50</div>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+									<!-- image source: https://unsplash.com/photos/broccoli-with-meat-on-plate-mmnKI8kMxpc -->
+									  <!-- load the smaller images when width is smaller than 720px-->
+									  <source media="(min-width: 720px)" srcset="./images/6,5a1ad62cb2b35a0aa3db-960.jpg, ./images/6,5a1ad62cb2b35a0aa3db-1440.jpg 2x" />
+									  <source media="(max-width: 720px)" srcset="./images/6,5a1ad62cb2b35a0aa3db-480.jpg, ./images/6,5a1ad62cb2b35a0aa3db-960.jpg 2x" />
+									  <!-- Fallback images -->
+									  <img src="./images/6.5a1ad62cb2b35a0aa3db.jpg" alt="broccoli with meat - CAD 2.20" />
+									</picture>
+									<div class="price-tag">Thai Steamed Salmon - CAD 9.20</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-content">
+							<div class="product-content-text">
+								<h2 class="product-content_subtitle">Checkout</h2>
+								<h3 class="product-content_subtitle_summary">When you done check out and get it delivered.</h3>
+								<h4 class="product-content_subtitle_detail">Before checking out be sure to watch other items.</h4>
+							</div>
+							<div class="">
+								<picture>
+								  <!-- load the smaller images when width is smaller than 768px-->
+								  <source media="(min-width: 768px)" srcset="./images/p-5-960.png, ./images/p-5-1440.png 2x" />
+								  <source media="(max-width: 768px)" srcset="./images/p-5-480.png, ./images/p-5-960.png 2x" />
+								  <!-- Fallback images -->
+								  <img class="how-content_phoneimg" id="phoneimg_p5" src="./images/p-5.png" alt="" />
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- footer -->
+				<div class="footer section__padding">
+					<div class="footer-logo">
+						<img id="logo" src="./images/logo.png" alt="Olonje logo">
+					</div>
+					<div class="footer-ls">
+                        <a href="https://www.twitter.com/"><img src="./images/sns_twitter.png" alt="twitter logo" aria-label="link to twitter"></a>
+                        <a href="https://www.facebook.com/"><img src="./images/sns_facebook.png" alt="facebook logo" aria-label="link to facebook"></a>
+                        <a href="https://www.linkedin.com/"><img src="./images/sns_linkedin.png" alt="linkedin logo" aria-label="link to linkedin"></a>
+					</div>
+					<div class="footer-text">
+						<p>Copywright 2020 Bella Onojie.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,308 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Bella Olonje</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet">
-    <!--<link href="./css/main.css" rel="stylesheet">-->
-    <link href="./main.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- shoudle be condsider as the main container (nameing root is for the bootstrap usages)-->
-    <div id="container">
-      <div class="App">
-        <!--Container of the navbar for adding sutiabtle color background-->
-        <div class="gradient__bg">
-          <!--nav bar -->
-          <div class="navbar">
-            <div class="navbar-links">
-              <div class="navbar-links_logo">
-                <img src="./images/logo.png">
-              </div>
-              <!-- links for navbar and change styling base on the max-width of screens -->
-              <div class="navbar-links_container">
-                <p>
-                  <a href="#home">Home</a>
-                </p>
-                <p>
-                  <a href="#product">Product</a>
-                </p>
-                <p>
-                  <a href="#contact">Contact</a>
-                </p>
-              </div>
-            </div>
-            <!-- Nav-menu is used to shown when web page in phone -->
-            <!-- May remove these since require to us JS for get it done -->
-            <div class="navbar-menu">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#252B42" style="color: rgb(37, 43, 66);" height="25" width="25" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
-              </svg>
-            </div>
-          </div>
-          <!-- new section, Home/Header -->
-          <div class="header section__padding" id="home">
-            <div class="header-content">
-              <h3>Food App</h3>
-              <h1 class="gradient__text">Why stay hungry when you can order from Bella Olonje</h1>
-              <h4>Download the bella olonje's food app now on</h4>
-              <!--here use the button for apps store link-->
-              <div class="header-content__input-center">
-                <a href="https://play.google.com/">
-                  <button type="button" class="header-content__input-button1">Playstore</button>
-                </a>
-                <a href="https://www.apple.com/app-store/">
-                  <button type="button" class="header-content__input-button2">AppStore</button>
-                </a>
-              </div>
-              <div class="header-content__phoneimg">
-                <!-- Todo : change the images file base on the size by src-set -->
-                <img id="phoneimg_p1" src="./images/p-1.png">
-                <img id="phoneimg_p2" src="./images/p-2.png">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Products pages : "How" section-->
-        <div>
-          <!--two styles here, one is section padding (resue the section__padding), one is for only "how" section -->
-          <div class="how section__padding">
-            <div class="how-content">
-              <div class="how-content__hr">
-                <!-- may be change the inline image to external png files-->
-                <!-- <img id="hr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA3QAAAAECAYAAADGWn3nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA2SURBVHgB7cABDQAgCAAwcNDD/qUwijnY/pyZGwAAAKxT3T0BAADAOicAAABYqTLzBQAAAOt8oFgEmvwresoAAAAASUVORK5CYII="> -->
-                <h3 id="haw">How the app works</h3>
-              </div>
-              <div class="how-content__others">
-                <div class="how-content__others-phoneimg">
-                  <img id="phoneimg_p3" src="./images/p-3.png">
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+<!-- Creates skiplinks to "how" section and "download" section -->
+<body>
+    <ul class="skip-nav-links">
+        <li><a href="#skip-how" aria-label="skiplink to how section">Skip to "How the app works"</a></li>
+        <li><a href="#skip-download" aria-label="skiplink to download page">Skip to "Download" section</a></li>
+        </ul>
+    <!-- The main container-->
+    <div>
+        <div class="container">
+            <!--Container of the navbar for adding sutiabtle color background-->
+            <div class="">
+                <!--nav bar -->
+                <div class="navbar">
+                    <div class="navbar-links">
+                        <div class="navbar-links_logo">
+                            <img src="./images/logo.png" alt="Olonje logo">
+                        </div>
+                        <!-- links for navbar and change styling base on the max-width of screens -->
+                        <ul class="navbar-links_container">
+                            <li><a href="./index.html" aria-label="link to homepage">Home</a></li>
+                            <li><a href="./product.html" aria-label="link to products page">Product</a></li>
+                            <li><a href="#" aria-label="link to faq page">FAQ</a></li>
+                            <li><a href="./contact.html" aria-label="link to contact page">Contact</a></li>
+                            </ul>
+                    </div>
                 </div>
-                <div class="how-content__others-text">
-                  <h3 id="cra">Create an account</h3>
-                  <h2 id="exa">Create/login to an existing account to get started</h2>
-                  <h4 id="epa">An account is created with your email and a desired password</h4>
+                <!-- new section, Home/Header -->
+                <div class="header" id="home">
+                    <div class="header-content">
+                        <h3>Food App</h3>
+                        <h1>Why stay hungry when you can order from Bella Olonje</h1>
+                        <h4>Download the bella olonje's food app now on</h4>
+                        <!--here use the button for apps store link-->
+                        <div class="header-content_input-center">
+                            <a href="https://play.google.com/" class="header-content_input-button1" aria-label="link to google playstore"><span>Playstore</span></a>
+                            <a href="https://www.apple.com/app-store/" class="header-content_input-button2" aria-label="link to apple store"><span>AppStore</span></a>
+                        </div>
+						<!-- make a placeholder to better fit the phoneimg-->
+						<div class="header-content_placeholder"></div>
+                    </div>
+                    <div class="header-content_phoneimg">
+						<picture>
+						  <!-- load the smaller images when width is smaller than 768px-->
+						  <source media="(min-width: 768px)" srcset="./images/p-12-960.png, ./images/p-12-1440.png 2x" />
+						  <source media="(max-width: 768px)" srcset="./images/p-12-480.png, ./images/p-12-960.png 2x" />
+						  <!-- Fallback images -->
+						  <img id="phoneimg_p12" src="./images/p-12.png" alt="" />
+						</picture>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="product section__padding" id="product">
-            <div class="product-content">
-              <div class="product-content-text">
-                <h3 id="pt1">Explore varieties</h3>
-                <h2 id="pt2">Shop for your favorites meal as e dey hot.</h2>
-                <h4 id="pt3">Make sure to watch below for the items list.</h4>
-              </div>
-              <div class="product-content-phoneimg">
-                <img id="phoneimg_p4" src="./images/p-4.png">
-              </div>
-            </div>
-            <!-- like the week4 project, not in mock up -->
-            <!-- there is the room to use grids instead of using JS-->
-            <!--  
-            <div class="pay-swipe">
-              <h3 id="pt7">Checkout our Items</h3>
-              <div class="swiper-container">
-                <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events mySwiper" style="cursor: grab;">
-                  <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-3784px, 0px, 0px);">
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0">
-                      <img src="./images/1.2358e5c5af8da5ce0847.jpg" alt="">
-                      <div class="price-tag">Prawn Rice - BDT 220</div>
+            <!-- Products pages : "How" section-->
+          
+            <div>
+                <!--two styles here, one is section padding (resue the section__padding), one is for only "how" section -->
+                <div class="how" id="skip-how">
+                    <div class="how-content_hr">
+                        <h3>How the app works</h3>
                     </div>
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1">
-                      <img src="./images/2.99b2800bf71faebae047.jpg" alt="">
-                      <div class="price-tag">Custard Fruits - BDT 340</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2">
-                      <img src="./images/3.21d06e69d44600cf2fbc.jpg" alt="">
-                      <div class="price-tag">Chicken Veg - BDT 200</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
-                      <img src="./images/4.f88cacd87e3008e8380a.jpg" alt="">
-                      <div class="price-tag">Egg Salad - BDT 120</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
-                      <img src="./images/5.2f5a3d619010ce8b976e.jpg" alt="">
-                      <div class="price-tag">Beef Bacon - BDT 390</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5">
-                      <img src="./images/6.5a1ad62cb2b35a0aa3db.jpg" alt="">
-                      <div class="price-tag">Chilli Chicken - BDT 220</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6">
-                      <img src="./images/7.6f0576736e3894e78072.jpg" alt="">
-                      <div class="price-tag">Chowmein - BDT 160</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7">
-                      <img src="./images/8.424593ef1d6bc9214d5d.jpg" alt="">
-                      <div class="price-tag">Baked Fish - BDT 130</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8">
-                      <img src="./images/9.057bf8b0fa662c5935b5.jpg" alt="">
-                      <div class="price-tag">Chicken Salad - BDT 110</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="9">
-                      <img src="./images/10.c9a9367ff92f022e1794.jpg" alt="">
-                      <div class="price-tag">Breakfast/Snacks - BDT 100</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0">
-                      <img src="./images/1.2358e5c5af8da5ce0847.jpg" alt="">
-                      <div class="price-tag">Prawn Rice - BDT 220</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1">
-                      <img src="./images/2.99b2800bf71faebae047.jpg" alt="">
-                      <div class="price-tag">Custard Fruits - BDT 340</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2">
-                      <img src="./images/3.21d06e69d44600cf2fbc.jpg" alt="">
-                      <div class="price-tag">Chicken Veg - BDT 200</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="3">
-                      <img src="./images/4.f88cacd87e3008e8380a.jpg" alt="">
-                      <div class="price-tag">Egg Salad - BDT 120</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="4">
-                      <img src="./images/5.2f5a3d619010ce8b976e.jpg" alt="">
-                      <div class="price-tag">Beef Bacon - BDT 390</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="5">
-                      <img src="./images/6.5a1ad62cb2b35a0aa3db.jpg" alt="">
-                      <div class="price-tag">Chilli Chicken - BDT 220</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="6">
-                      <img src="./images/7.6f0576736e3894e78072.jpg" alt="">
-                      <div class="price-tag">Chowmein - BDT 160</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="7">
-                      <img src="./images/8.424593ef1d6bc9214d5d.jpg" alt="">
-                      <div class="price-tag">Baked Fish - BDT 130</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="8">
-                      <img src="./images/9.057bf8b0fa662c5935b5.jpg" alt="">
-                      <div class="price-tag">Chicken Salad - BDT 110</div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="9">
-                      <img src="./images/10.c9a9367ff92f022e1794.jpg" alt="">
-                      <div class="price-tag">Breakfast/Snacks - BDT 100</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0">
-                      <img src="./images/1.2358e5c5af8da5ce0847.jpg" alt="">
-                      <div class="price-tag">Prawn Rice - BDT 220</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1">
-                      <img src="./images/2.99b2800bf71faebae047.jpg" alt="">
-                      <div class="price-tag">Custard Fruits - BDT 340</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2">
-                      <img src="./images/3.21d06e69d44600cf2fbc.jpg" alt="">
-                      <div class="price-tag">Chicken Veg - BDT 200</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
-                      <img src="./images/4.f88cacd87e3008e8380a.jpg" alt="">
-                      <div class="price-tag">Egg Salad - BDT 120</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
-                      <img src="./images/5.2f5a3d619010ce8b976e.jpg" alt="">
-                      <div class="price-tag">Beef Bacon - BDT 390</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5">
-                      <img src="./images/6.5a1ad62cb2b35a0aa3db.jpg" alt="">
-                      <div class="price-tag">Chilli Chicken - BDT 220</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6">
-                      <img src="./images/7.6f0576736e3894e78072.jpg" alt="">
-                      <div class="price-tag">Chowmein - BDT 160</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7">
-                      <img src="./images/8.424593ef1d6bc9214d5d.jpg" alt="">
-                      <div class="price-tag">Baked Fish - BDT 130</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8">
-                      <img src="./images/9.057bf8b0fa662c5935b5.jpg" alt="">
-                      <div class="price-tag">Chicken Salad - BDT 110</div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="9">
-                      <img src="./images/10.c9a9367ff92f022e1794.jpg" alt="">
-                      <div class="price-tag">Breakfast/Snacks - BDT 100</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
 
-            <div class="pay-content">
-              <div class="pay-content-phoneimg">
-                <img id="phoneimg_p5" src="./images/p-5.png">
-              </div>
-              <div class="pay-content-text">
-                <h3 id="pt4">Checkout</h3>
-                <h2 id="pt5">When you done check out and get it delivered.</h2>
-                <h4 id="pt6">Before checking out be sure to watch other items.</h4>
-              </div>
-            </div>
-          </div>
+                    <div class="how-content">
+                        <div class="how-content-text">
+                            <h2 class="how-content_subtitle">Create an account</h2>
+                            <h3 class="how-content_subtitle_summary">Create/login to an existing account to get started</h3>
+                            <h4 class="how-content_subtitle_detail">An account is created with your email and a desired password</h4>
+                        </div>
+                        <div class="how-content_imagefirst">
 
-          <!-- faq section could be moved to other pages-->
-          <div class="faq section__padding" id="faq">
-            <div class="faq-content">
-              <h2 class="gradient__text">Download the app now.</h2>
-              <h4>Join the Olonje community for FAQs. Start your premium experience now.</h4>
-              <div class="faq-content__input-center">
-                <a href="https://play.google.com/">
-                  <button type="button" class="faq-content__input-button1">Playstore</button>
-                </a>
-                <a href="https://www.apple.com/app-store/">
-                  <button type="button" class="faq-content__input-button2">AppStore</button>
-                </a>
-              </div>
+						<picture>
+						  <!-- load the smaller images when width is smaller than 768px-->
+						  <source media="(min-width: 768px)" srcset="./images/p-3-960.png, ./images/p-3-1440.png 2x" />
+						  <source media="(max-width: 768px)" srcset="./images/p-3-480.png, ./images/p-3-960.png 2x" />
+						  <!-- Fallback images -->
+						  <img class="how-content_phoneimg" id="phoneimg_p3" src="./images/p-3.png" alt="" />
+						</picture>
+                        </div>
+                    </div>
+
+                    <div class="how-content">
+                        <div class="how-content-text">
+                            <h2 class="how-content_subtitle">Explore varieties</h2>
+                            <h3 class="how-content_subtitle_summary">Shop for your favorites meal as e dey hot.</h3>
+                            <h4 class="how-content_subtitle_detail">Make sure to watch below for the items list.</h4>
+                        </div>
+                        <div class="">
+							<picture>
+							  <!-- load the smaller images when width is smaller than 768px-->
+							  <source media="(min-width: 768px)" srcset="./images/p-4-960.png, ./images/p-4-1440.png 2x" />
+							  <source media="(max-width: 768px)" srcset="./images/p-4-480.png, ./images/p-4-960.png 2x" />
+							  <!-- Fallback images -->
+							  <img class="how-content_phoneimg" id="phoneimg_p4" src="./images/p-4.png" alt="" />
+							</picture>
+                        </div>
+                    </div>
+
+                    <div class="how-content">
+                        <div class="how-content-text">
+                            <h2 class="how-content_subtitle">Checkout</h2>
+                            <h3 class="how-content_subtitle_summary">When you done check out and get it delivered.</h3>
+                            <h4 class="how-content_subtitle_detail">Before checking out be sure to watch other items.</h4>
+                        </div>
+                        <div class="how-content_imagefirst">
+							<picture>
+							  <!-- load the smaller images when width is smaller than 768px-->
+							  <source media="(min-width: 768px)" srcset="./images/p-5-960.png, ./images/p-5-1440.png 2x" />
+							  <source media="(max-width: 768px)" srcset="./images/p-5-480.png, ./images/p-5-960.png 2x" />
+							  <!-- Fallback images -->
+							  <img class="how-content_phoneimg" id="phoneimg_p5" src="./images/p-5.png" alt="" />
+							</picture>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- download section-->
+                <div class="download" id="skip-download">
+                    <div class="download-content">
+                        <h2 class="download-title">Download the app now.</h2>
+                        <h4>Available on your favorite store. Start your premium experience now.</h4>
+                        <div class="download-content_input-center">
+                            <a href="https://play.google.com/" class="download-content_input-button1" aria-label="link to google playstore"><span>Playstore</span></a>
+                            <a href="https://www.apple.com/app-store/" class="download-content_input-button2" aria-label="link to apple store"><span>AppStore</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="footer">
+                    <div class="footer-logo">
+                        <img id="logo" src="./images/logo.png" alt="Olonje logo">
+                    </div>
+                    <div class="footer-ls">
+                        <a href="https://www.twitter.com/" aria-label="link to twitter"><img src="./images/sns_twitter.png" alt="twitter logo"></a>
+                        <a href="https://www.facebook.com/" aria-label="link to facebook"><img src="./images/sns_facebook.png" alt="facebook logo"></a>
+                        <a href="https://www.linkedin.com/" aria-label="link to linkedin"><img src="./images/sns_linkedin.png" alt="linkedin logo"></a>
+                    </div>
+                    <div class="footer-text">
+                        <p>Copywright 2020 Bella Onojie.com</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- mt5 margin-top by 5unit -->
-          <div class="container mt-5 section__padding" id="contact">
-            <!-- mt3 margin-top by 3unit -->
-            <h2 class="mb-3" id="faq_q">Any queries? Feel free to contact.</h2>
-            <form>
-              <div class="mb-3">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control" type="text" id="name" required="">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-control" type="email" id="email" required="">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control" id="message" required=""></textarea>
-              </div>
-              <button class="btn_form" type="submit">Send</button>
-            </form>
-          </div>
-          <!-- footer -->
-          <div class="footer section__padding">
-            <div class="footer-logo">
-              <img id="logo" src="./images/logo.png">
-            </div>
-            <div class="footer-ls">
-              <a href="https://www.facebook.com/">
-                <!-- may be change the inline image to external png files-->
-                <img id="l1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAAqCAYAAADMBKtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS3SURBVHgB7dxvbtpYEADwGf+hSaESNyh7gs0NQr4ldKXSE5SeIMkJgBNscoKlJ9ggbRP2U+gN2BPUPUGRAoH4z5ud59KkgImNE0hj5idZRq4pgoyf5817zwBCCCGEEEIIIR4Fgpgz2i+WLPQPyaAirBkq7Fsjq4ndfh/EFAvEHMvw3xPAEdD6r2X9kd625/DLUxBTDFiTUXWrpDcQsRBx7S36c7DSYPX+KJS9N4VL903hm+laX/SmX7uV/F+j/fnA1eeDEAtEpgE6ZzMMv/bifNCAlG4qhQYpqM/9AwG3GlgzDavm7udrwVbw2fTNt0hYVQHoPK0LQkSIDFbTCMq8q3PAQZqA1YHKqVc99kQDW9zahi8VkaMo2INs6iNBi2/vXSK67Tjp230AVOPfqgoiVmSwItBbCvfLB6xulRH8+ED9CYWBih8MtHfcilnPnQ8/QFYobNlj83hR796rFHZIgjWR6GoA8q2afryEOueYrwMVNLc7YwdicKu8VKCGn2Fg0SS4JFIOf052WleCbq5zlZ0L74lFd7AIZloBrBmGyR2l/HuIgUg7sCzOY2mSBiS5IJ6LgHwJ1Ee0qM7ag5lbEwKWOKhaN5V8AxEauU/Dj1FvJNJlF4JlZDFQ+SfoRX0fKheLfsG/vaBJUUnGZpKJDFYrZ516nn/0vec+bSpouedOZLRzI7P7kBEX/j+dTAUqhJerM3tM5/OeEVyCgtLdUQnUpCLTADzr95Wi5n1vDIOW0wO+7f/tvfS/6fqprqkCrn+I8lfEv8vcxfu9yqJbUpFGZLDq4jxRcMa3+xNIKsw7oRzVGsdCcmADcJXlNYjUojtYCg65aP8lDL410GkACBFj0XBrb7JfvmefAgbYAyFiRAar7mBxc7e2KWrmjfkZnjuiIxv80u12bR/PnmJdW6dT5/Cma7EgEokeweIO1vgg3zQQ/4RV4z9WFuZuGgYPqX4af707Mp47Z/I9p74rd0p1ri8SWDjrautieEIKGrBqRC3YYBynJRCJ3DtF8EVn0OSxbT0Ks5KcUg8G2GO7DRuKqsViqurJhro3WAeV/A6YapdLSz2CFZSXCFubvHzD9/21dGCz4t5lLYXzYc89eFXmYC099jhLOMQKwUfICMUXnlsptO6OUGt29phXKdT5tt+4PUOBWELsSgEX1TtYASRoZG2IVaxWbLDq1jVQsMe3bAceC8FJrjPMTKsq1iPRGqztzqAbkLk3qQ48rLNF0LNHVhOEWFLiBYPbnb6jqwP2taUnR6daJqzz1ID8d7ImXqSR+LkBeh6m+9I/8tA/TFVu0bPmRzYH6lACVaQyF6x6bf/22djRe9M1OSiNHUC164FfRbpb7rIMnT6ENVshHmAuWG3X/t09sC/B/THvkiD1k0m4NXWRjgudoUxUEQ82l7Na51ft3MXVbwZglcP0DJbX1zVGboXLuYvBnq4mgBCPYGHOqoOWd22dqwYvg13uHJVJTxkMV77+9HgbpL5ewmFQuIzjzBpZ/0kHSqxCbAdrEnjtySbEk1nbg9meEzLoSe8MpDZjmc+y5JGXEXL/DE/9yisHVPoZUR7A19ljN0DtLWU4976RoG/9O5C7mBBCCCGEEM/Q/3vsAQVxQRPNAAAAAElFTkSuQmCC">
-              </a>
-              <a href="https://www.instagram.com/">
-                <!-- may be change the inline image to external png files-->
-                <img id="l2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMJSURBVHgB7ZhNTBNBGIbf2V1MCDX2BBcDxDMQuEkMERIP/CVwMlG81IOKxoOe1OjNCF7kpOHGqXiFSJBEiRhI9CZp71i4wakmbTDtzI4z023pLtuf3XZbo7xJs9mZ6X7PfvP97C5wpn9QpNKC7GRoGAxTYmW3+IVRD5nYhY7VlrXUFvzAHY+Guw2dLnGOYQQkQrBFGY20bvxOuM67DabG2/rPEfIFvE6eKq9kJstHQp/Su6gEJz2m6/RHg8DySjKTDjg9qDlXya1sMJhUWCfGknPQBieDP8gYKyuC4eNRkXxFsnuOi6wM0n5bGOTaDNB2wXXeIHb7zm3tR4AiU7MwHi1Ck4AuMiHKVZEM1NN4exf40X7JeXMzmjt+W3P/P+yxXjOcNnUf2uAkSO9QYYzvxWCuvAOP79hhDw9gLs9Ve2n/cKSjC8b8OtDeeQJ1uK/GyaU+6I8XFQx9eUPB+pEGHyoGk0D0yRiy1y+C3u5BduK8Olce6+hU6yRsw+DyYOb3D6APr6jtQ/pXYV6e00gPzOgrlZnG8/clM7SucCrTLI+xN7M2KKeYiC8e31YelLEZPNzlyZzh6FxZsAJgNJcApG8IXuV9WzusBPhZXZDnk0HrbQRcyIqdVGWvKUnv5j3sMe58JYRSqEpDEigPla7yhix5huOxHXUkVuxVNDCYW2fGtuFVnuHMz7kWpE8/UO2qnGSj12ee2f4XKJwsDao8iK3SXyyXBJRg2t35Qtnhm97hfLUvunCvUPnlka2+zRViK0nI4ITy7EkHGYcf+eutsmcKg/rNp6Io34J+57XrMhlnTNwIjg7gR/6fSgQgW5hVsSS7huqfVlbyvTjMvDdrUM2PTBKA1QhRSs7H9CT+ItnhCBJoosSTsO3d1QZHGVbRXK0Un9jgWjfEtwuOLTRDwm7Lx9TX4qFTRZhxIyL82+jYSzJOI87BU3CtG8lEhvORBgImM+Ajbh9zXNtXaD29y5gxEPgWi+vLbyTSntt05e9zY6Gr4jDN6/TCzcWOaFxVhRVnjJ3pv9Af4F4nn7dJWUsAAAAASUVORK5CYII=">
-              </a>
-            </div>
-            <div class="footer-text">
-              <p>Copywright 2020 Bella Onojie.com</p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>

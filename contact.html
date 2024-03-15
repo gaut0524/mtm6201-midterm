@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bella Olonje</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/contact.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Adds skiplink to the contact form on contact page -->
+    <ul class="skip-nav-links">
+      <li><a href="#skip-contact" aria-label="skiplink to contact section">Skip to "contact"</a></li>
+      </ul>
+    <!-- The main container-->
+    <div>
+      <div class="container">
+        <!--Container of the navbar for adding sutiabtle color background-->
+        <div class="">
+          <!--nav bar -->
+          <div class="navbar">
+            <div class="navbar-links">
+              <div class="navbar-links_logo">
+                <img src="./images/logo.png" alt="Olonje logo">
+              </div>
+              <!-- links for navbar and change styling base on the max-width of screens -->
+              <ul class="navbar-links_container">
+                <li><a href="./index.html" aria-label="link to homepage">Home</a></li>
+                <li><a href="./product.html" aria-label="link to products page">Product</a></li>
+                <li><a href="#" aria-label="link to faq page">FAQ</a></li>
+                <li><a href="./contact.html" aria-label="link to contact page">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="download" id="faq">
+            <div class="download-content">
+              <h2 class="download-title">Download the app now.</h2>
+              <h4>Join the Olonje community for FAQs. Start your premium experience now.</h4>
+              <div class="download-content_input-center">
+                <a href="https://play.google.com/" class="download-content_input-button1" aria-label="link to google playstore"><span>Playstore</span></a>
+                <a href="https://www.apple.com/app-store/" class="download-content_input-button2" aria-label="link to apple store">
+                  <span>AppStore</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact mt-5 section__padding" id="contact">
+            <h2 class="mb-3" id="faq_q">Any queries? Feel free to reach out!</h2>
+            <form>
+              <div class="mb-3" id="skip-contact">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" required="" aria-label="enter fullname">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" required="" aria-label="enter email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" required=""></textarea aria-label='type message'>
+              </div>
+              <button class="btn_form" type="submit" aria-label="contact form submission button">Send</button>
+            </form>
+          </div>
+
+
+          <!-- footer -->
+          <div class="footer">
+                    <div class="footer-logo">
+                        <img id="logo" src="./images/logo.png" alt="Olonje logo">
+                    </div>
+                    <div class="footer-ls">
+                        <a href="https://www.twitter.com/"><img src="./images/sns_twitter.png" alt="twitter logo" aria-label="link to twitter"></a>
+                        <a href="https://www.facebook.com/"><img src="./images/sns_facebook.png" alt="facebook logo" aria-label="link to facebook"></a>
+                        <a href="https://www.linkedin.com/" aria-label="link to linkedin"><img src="./images/sns_linkedin.png" alt="linkedin logo"></a>
+                    </div>
+                    <div class="footer-text">
+                        <p>Copywright 2020 Bella Onojie.com</p>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
